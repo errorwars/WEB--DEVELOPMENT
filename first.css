@@ -1,0 +1,56 @@
+#table1
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border: 1px solid ;
+    text-align: left;
+    width: 100%;
+}
+p{
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+    background-color: rgb(10, 241, 164);
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+th{
+    background-color: brown;
+    color: white;
+}
+
+td
+{
+    background-color: aquamarine;
+    border-collapse: collapse;
+    border: 1px solid
+}
+
+#cbtn{
+
+    background-color: aqua;
+    color: black;
+    border-color: aquamarine;
+    cursor: pointer;
+    width: 90px;
+    margin-top: 5px;
+    margin-left: 5%;
+}
+
+#sbtn{
+    background-color: cornflowerblue;
+    color: azure;
+    border-color: cornflowerblue;
+    cursor: pointer;
+    width: 90px;
+    margin-top: 5px;
+    margin-left: 5%;
+}
+
+#form{
+    margin-left: 40%;
+}
+
