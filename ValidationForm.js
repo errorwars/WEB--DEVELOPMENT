@@ -6,7 +6,6 @@
     <title> Registration Form</title>
     <link rel="stylesheet" href="validation.css">
        
-    
 </head>
 <body>
     <form id="registrationForm">
