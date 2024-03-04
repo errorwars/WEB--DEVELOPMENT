@@ -22,24 +22,26 @@ class _MyAppState extends State<MyApp> {
     final email = _emailController.text;
     final password = _passwordController.text;
 
+    //establishing connection to db
     final connection = PostgreSQLConnection(
-      'localhost',
-      5432, 
-      'loginForm',
-      username: 'postgres',
-      password: '1234',
+      'localhost',//name of your host
+      5432, //port number
+      'loginForm',//name of database
+      username: 'postgres',//username
+      password: '1234',//password
     );
 
     await connection.open();
 
+    //here you insert your query to record information
     await connection.query(
         'INSERT INTO users (email, password) VALUES (@email, @password)',
         substitutionValues: {'email': email, 'password': password});
 
-    await connection.close();
+    await connection.close();//closing connection
 
-    _emailController.clear();
-    _passwordController.clear();
+    _emailController.clear();//clearing the data you entered from box
+    _passwordController.clear();//same
 
   }
 
